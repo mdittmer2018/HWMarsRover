@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/MarsRover.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/MarsRover.css">
+	<title>Hello World Mars Rover Challenge</title>
+</head>
+<body>
+	<div class="wrapper">
+        <header class="main-head bold">Mars Rover Coding Challenge for Hello World</header>
+        <nav class="gridpanel bold">
+        	
+        	<img id="rocketNav" class="rocket rocketPosition" src="images/rocket32x22.jpg"/>
+        </nav> 
+        <article class="instructpanel"><strong>Coding Challenge Instructions</strong>
+	        <p><i>Purpose:</i> Develop an application that moves a rover around on a grid.</p>
+			<p><i>Requirements:</i></>
+				<ul>
+					<li>Provide the initial starting point (x, y) and facing direction (N, S, E, W) of the rover.</li> 
+					<li>The rover should receive a sequence of instructions via an array.</li> 
+					<li>Implement commands that move the rover forward and backward (f, b) on the grid.</li> 
+					<li>Implement commands that turn the rover left and right (l, r) on the grid.</li>
+				</ul>
+			</p>
+		</article>
+		<main class="controlpanel"><strong>NASA Control Panel</strong>
+			<p><form><i>Position the Rover.</i> Enter desired starting point values (x,y) and facing direction (N,S,E,W). <br />
+				<table><tr><td style="width:100px; text-align:right">X:</td><td><input type="text" size="10" name="x" id="x"></td></tr>
+				<tr><td style="width:100px; text-align:right">Y:</td><td><input type="text" size="10" name="y" id="y"></td></tr>
+				<tr><td style="width:100px; text-align:right">Direction:</td><td><input type="text" size="10" name="direction" id="direction"></td></tr>
+				</table>
+				<div style="text-align:center;"><button onclick="positionRover(); return false;">Position the Rover</button></div>
+			</form></p>
+			<p><form><i>Instruct the Rover to Move.</i> Enter one or more letter commands (f,b,l,r). <br />
+				  Command(s): <input type="text" name="commands" id="commands"><br />
+				  <div style="text-align:center;"><button onclick="moveRover();return false;">Move the Rover</button></div>
+			</form></p>
+		
+		</main>
+		<footer class="main-footer">Place the footer information here</footer>
+	</div>
+</body>
+</html>
